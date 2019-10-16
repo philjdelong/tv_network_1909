@@ -9,7 +9,7 @@ class Show
 
   def total_salary
     show_salary = 0
-    @characters.each do |character|
+    @characters.map do |character|
       show_salary += character.salary
     end
     show_salary
