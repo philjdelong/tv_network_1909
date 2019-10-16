@@ -1,7 +1,9 @@
+require'minitest/autorun'
+require'minitest/pride'
 require'./lib/character'
 require'pry'
 
-class CharacterTest < Test::MiniTest
+class CharacterTest < MiniTest::Test
   def setup
     @kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
   end
